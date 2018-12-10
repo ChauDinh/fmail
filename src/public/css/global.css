@@ -4,7 +4,7 @@
  box-sizing: border-box;
 }
 
-#root {
+:root {
  --background-gray: #f1f1f1;
  --background-white: #fff;
 

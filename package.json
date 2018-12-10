@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "build": "webpack --mode production",
+    "webpack:watch": "npx webpack --watch",
     "css:build": "npx postcss ./src/public/css/main.css -o ./dist/main.css",
+    "css:watch": "npx postcss --watch ./src/public/css/main.css -o ./dist/main.css",
     "build:production": "npm run css:build && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

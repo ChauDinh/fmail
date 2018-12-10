@@ -1,13 +1,17 @@
-import React from "react";
 import Header from "../header/Header";
 import Router from "react-router-dom/BrowserRouter";
+import React, { Component } from 'react'
 
-module.exports = () => {
- return (
-  <Router>
-   <div>
-    <Header />
-   </div>
-  </Router>
- );
-};
+export class App extends Component {
+  render() {
+    return (
+      <div>
+       <Router>
+        <Header />
+       </Router>
+      </div>
+    )
+  }
+}
+
+export default App;
