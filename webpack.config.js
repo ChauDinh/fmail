@@ -2,16 +2,19 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
- entry: "./src/public/js/main.js",
+ entry: "./src/public/js/main.jsx",
  output: {
   path: path.join(__dirname, "/dist"),
   filename: "bundle.js"
+ },
+ resolve: {
+  extensions: [".jsx", ".js"]
  },
  mode: "development",
  module: {
   rules: [
    {
-    test: /\.js$/,
+    test: /\.jsx?/,
     exclude: /node_modules/,
     use: {
      loader: 'babel-loader'
