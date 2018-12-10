@@ -1,9 +1,9 @@
 const Input = require("@material-ui/core/Input").default;
 const Button = require("@material-ui/core/Button").default;
 const SearchIcon = require("@material-ui/icons/Search").default;
-import React, { Component } from 'react';
+const React = require("react");
 
-class Header extends Component {
+class Header extends React.Component {
  constructor() {
   super();
   this.onSubmit = this.onSubmit.bind(this);
@@ -27,4 +27,4 @@ class Header extends Component {
   }
 }
 
-export default Header
+module.exports = Header;

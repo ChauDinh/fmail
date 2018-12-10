@@ -1,17 +1,12 @@
-import Header from "../header/Header";
-import Router from "react-router-dom/BrowserRouter";
-import React, { Component } from 'react'
+const Header = require("../header/Header");
+const Router = require("react-router-dom/BrowserRouter");
+const Route = require("react-router-dom/Route");
+const React = require("react");
 
-export class App extends Component {
-  render() {
-    return (
-      <div>
-       <Router>
-        <Header />
-       </Router>
-      </div>
-    )
-  }
+module.exports = () => {
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
-
-export default App;
