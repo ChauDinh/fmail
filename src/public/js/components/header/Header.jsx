@@ -1,7 +1,7 @@
-const Input = require("@material-ui/core/Input").default;
-const Button = require("@material-ui/core/Button").default;
-const SearchIcon = require("@material-ui/icons/Search").default;
-const React = require("react");
+import React from "react";
+import Button from "@material-ui/core/Button";
+import Input from "@material-ui/core/Input";
+import SearchIcon from "@material-ui/icons/Search";
 
 class Header extends React.Component {
  constructor() {

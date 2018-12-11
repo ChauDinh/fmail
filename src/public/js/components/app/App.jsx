@@ -1,12 +1,15 @@
 const Header = require("../header/Header");
-const Router = require("react-router-dom/BrowserRouter");
-const Route = require("react-router-dom/Route");
-const React = require("react");
+import Route from "react-router-dom/Route";
+import Router from "react-router-dom/BrowserRouter";
+import React from "react";
+const Paths = require("../../config/paths");
 
 module.exports = () => {
   return (
-    <div>
-      <Header />
-    </div>
+    <Router>
+      <div>
+        <Header />
+      </div>
+    </Router>
   )
 }
