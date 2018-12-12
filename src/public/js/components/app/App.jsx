@@ -4,6 +4,7 @@ import Router from "react-router-dom/BrowserRouter";
 import React from "react";
 const Paths = require("../../config/paths");
 const NavigationBar = require("../navigation_bar/NavigationBar");
+const Inbox = require("../inbox/Inbox");
 
 module.exports = () => {
   return (
@@ -12,12 +13,12 @@ module.exports = () => {
         <Header />
         <div className="content">
           <NavigationBar />
-          <Route path={Paths.root} />
-          <Route path={Paths.inbox} />
-          <Route path={Paths.important} />
-          <Route path={Paths.sentMail} />
-          <Route path={Paths.drafts} />
-          <Route path={Paths.spam} />
+          <Route path={Paths.root} component={Inbox} />
+          <Route path={Paths.inbox} component={Inbox} />
+          <Route path={Paths.important} component={Inbox} />
+          <Route path={Paths.sentMail} component={Inbox} />
+          <Route path={Paths.drafts} component={Inbox} />
+          <Route path={Paths.spam} component={Inbox} />
         </div>
       </div>
     </Router>
