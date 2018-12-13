@@ -30,5 +30,8 @@
 
 .navigation-bar__link {
  text-decoration: none;
+ display: block;
+ text-overflow: ellipsis;
+ overflow: hidden;
 }
 

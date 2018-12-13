@@ -12,7 +12,7 @@ const InboxEmail = incomingEmail => {
  const subject = incomingEmail.subject || "";
  const body = incomingEmail.body || "";
  const viewedAt = incomingEmail.viewedAt || "";
- const isImporttant = incomingEmail.isImporttant || false;
+ const isImportant = incomingEmail.isImportant || false;
  let maybeTimestamp = incomingEmail.timestamp || "";
 
  try {
@@ -25,7 +25,7 @@ const InboxEmail = incomingEmail => {
  return {
   id, 
   subject,
-  isImporttant,
+  isImportant,
   body,
   viewedAt,
   timestamp: maybeTimestamp
