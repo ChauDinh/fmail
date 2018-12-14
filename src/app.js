@@ -30,8 +30,18 @@ app.get("/emails", (req, res) => {
  res.json(emails);
 });
 
+app.post("/emails", (req, res) => {
+ console.log(req.body);
+ console.log("======================");
+ res.json(req.body);
+});
+
 app.all("*", (req, res) => {
  res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
+});
+
+app.use((error, req, res, next) => {
+ res.status(500).json({ error: error.message });
 });
 
 module.exports = app;
