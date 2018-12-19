@@ -55,7 +55,7 @@ class NavigationBar extends React.Component {
   }
  }
 
- onCompose(event) {
+ onCompose() {
   this.setState({ composeEmailOpen: true });
  }
 
@@ -79,9 +79,9 @@ class NavigationBar extends React.Component {
     <ComposeEmailOutcomeAlert 
      errorAlertOpen={this.state.errorAlertOpen}
      errorMessage={this.state.errorMessage}
-     onErrorAlertClose={this.state.onErrorAlertClose}
+     onErrorAlertClose={this.onErrorAlertClose}
      successAlertOpen={this.state.successAlertOpen}
-     onSuccessAlertClose={this.state.onSuccessAlertClose}
+     onSuccessAlertClose={this.onSuccessAlertClose}
     />
    </aside>
   );

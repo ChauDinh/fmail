@@ -38,7 +38,7 @@ const ComposeEmail = ({ open, onCancel, onSend }) => {
      <Button variant="contained" onClick={onCancel} color="secondary">
       Cancel
      </Button>
-     <Button variant="contained" onClick={onSend} color="primary">
+     <Button type="submit" variant="contained" color="primary">
       Send
      </Button>
     </DialogActions>

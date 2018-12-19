@@ -13,7 +13,9 @@ const Alert = ({ open, onClose, title, text }) => {
     {title}
    </DialogTitle>
    <DialogContent>
-    {text}
+    <DialogContentText>
+     {text}
+    </DialogContentText>
    </DialogContent>
    <DialogActions>
     <Button variant="contained" onClick={onClose} color="primary" autoFocus>
