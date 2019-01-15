@@ -5,6 +5,7 @@ const validateIncomingEmail = require("./lib/services/emailService/validateIncom
 const catchExceptions = require("./lib/utils/catchExceptions");
 const app = express();
 
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "..", "dist")));
 
 app.get("/emails", (req, res) => {
@@ -45,6 +46,7 @@ app.post(
  catchExceptions(async (req, res) => {
   const { recipients, subject, message } = req.body;
   const email = await emailService.createEmail(recipients, subject, message);
+  
   res.json(email);
  })
 );
