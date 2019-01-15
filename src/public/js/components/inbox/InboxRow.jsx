@@ -33,3 +33,15 @@ const InboxRow = ({ email }) => {
 };
 
 module.exports = InboxRow;
+
+// This is the mock text that I use to test the typing challenge of my mechanical keyboard from AULA, Chinese. 
+//
+// This is actually the first mechanical keyboard of mine. 
+//
+// I'm very keen on typing on a mechanical keyboard but my budget is limited so I decided to try on Chinese brand and AULA is my choice!
+//
+// After using it 2, 3 weeks, I released that the built quality of this keyboard is awesome. In particular, it has 2 layout...
+//
+//
+//
+// 

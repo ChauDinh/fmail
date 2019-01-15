@@ -23,7 +23,7 @@ const InboxEmail = incomingEmail => {
  }
 
  return {
-  id, 
+  id,
   subject,
   isImportant,
   body,
@@ -33,3 +33,7 @@ const InboxEmail = incomingEmail => {
 };
 
 module.exports = InboxEmail;
+
+/*
+ * This is the best practice of vim configuration
+ * including ....*/

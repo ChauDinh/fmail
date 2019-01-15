@@ -24,3 +24,9 @@ module.exports = () => {
     </Router>
   )
 };
+
+// This is the result of React development after configure the vimrc
+//
+// There are several ways to do that but I recommend you download/git-clone the config file on github page that I've linked at the end of the article.
+//
+//Have a great day! Happing vimming and happy new year!
